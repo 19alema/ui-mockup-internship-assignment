@@ -8,7 +8,7 @@ function Patient({styles}) {
     const style = {
         
     }
-    
+    // Patient Api endpoint link
     const API = ` https://619f39821ac52a0017ba467e.mockapi.io/patientDetails`
     
     useEffect(() => {
@@ -23,17 +23,16 @@ function Patient({styles}) {
         <div className="App_patient">
             <div className="App_patient-profile">
                 {
+                    // To Generate Patients Profile Information
+
                 patient.map(patient => {
-                    const { name, Upcoming, email, Past,avatar } = patient;
+                    const { name, Upcoming, email, Past} = patient;
                     return (
                         <div className="profile">
                             <div className="App_patient-profile_header">
                                 <div className="profile-image">
-                                    < img src = "https://reqres.in/img/faces/12-image.jpg"
-                                    alt = {
-                                        name
-                                    }
-                                    />
+                                    {/* Image src not from Api because the api had no image */}
+                                    <img src = "https://reqres.in/img/faces/12-image.jpg"  alt = {  name }/>
                                 </div>
                                 <div className="App_patient-profile_info">
                                     <h2>{name}</h2>
@@ -58,6 +57,7 @@ function Patient({styles}) {
                }
             </div>
 
+            {/* Allowing the users to know that some infromation is loading as he or she waits */}
             {
                 loading && <> < p > loading profile... </p></>
             }
@@ -65,7 +65,9 @@ function Patient({styles}) {
                 patient.map(patient => {
                  
                   const{Gender,Birthday} = patient
-                return (
+                    return (
+                    // Detail Patients Information
+                        
             <div className="App_patient-info">
                 <div className="App_patient-info_detail">
                     <SubInfo style={style} title="Gender" result={Gender} />
@@ -83,8 +85,8 @@ function Patient({styles}) {
                     <SubInfo title = "Zip Code" result = { patient["ZIP Code"]}/>
                 </div>
             </div>
-                             )
-                    })
+                     )
+                })
             }
         </div>
     )

@@ -6,7 +6,7 @@ import {
 } from "react-icons/bs";
 
 
-function Notes({styles}) {
+function Notes() {
     const style = {
         color: "blue",
         cursor: "pointer"
@@ -34,7 +34,11 @@ function Notes({styles}) {
             </div>
 
             <div className="notes_footer">
-                <SubLink text="Drg. Mega Nanade" icon={<BsPerson style={{ color: "blue" }} />} />
+                <SubLink
+                    text="Drg. Mega Nanade"
+                    icon={<BsPerson
+                    style={{ color: "blue" }} />}
+                />
                 <p>20 Nov '19</p>
             </div>
     </div>

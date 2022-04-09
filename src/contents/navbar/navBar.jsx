@@ -25,6 +25,7 @@ export default function NavBar() {
     }
     return (
         <div className="App_Nav">
+            {/* Header on the nav bar with logo and Button for expanding and contacting the navbar */}
             <div className="App_navbar-header">
                     <SingleFile
                         icon={<FaBriefcaseMedical style={{ fontSize: "1.5em", color: "blue" }} />}
@@ -37,22 +38,53 @@ export default function NavBar() {
             </div>
 
             <div className="App_Navbar-links">
+                {/* single nav link */}
                 <div className="nav_link">
-                    <Sublink style={style }  text = "Overview" icon = { <AiOutlineQuestionCircle /> } />
+                    <Sublink
+                        style={style}
+                        text="Overview"
+                        icon={<AiOutlineQuestionCircle />}
+                    />
                 </div>
+                {/* single nav link */}
                 <div className="nav_link">
-                    <Sublink text="Message"style={style}icon={<BiMessageDots /> } />
+                    <Sublink
+                        text="Message"
+                        style={style}
+                        icon={<BiMessageDots />}
+                    />
                 </div>
+                {/* single nav link */}
                 <div className="nav_link">
-                    <Sublink text = "Payement"style = {  style } icon = {  <BiDollarCircle />}/>
+                    <Sublink
+                        text="Payement"
+                        style={style}
+                        icon={<BiDollarCircle />}
+                    />
                 </div>
+                {  /* Single link */ }
                  <div className = "nav_link" >
-                    <Sublink text = "Patient List"style = {style}icon = { <BsPerson />} /> </div>
-                <div className="nav_link">
-                    <Sublink text = "Calender" style = { style}icon = { <BsCalendar /> }/>
+                    <Sublink
+                        text="Patient List"
+                        style={style}
+                        icon={<BsPerson />}
+                    />
                 </div>
+                { /* Single link */ }
                 <div className="nav_link">
-                    <Sublink text = "Settings" style = {style} icon = { <AiOutlineSetting />}/>     
+                    <Sublink
+                        text="Calender"
+                        style={style}
+                        icon={<BsCalendar />}
+                    />
+                </div>
+                {/* Single link */}
+                <div className="nav_link">
+                    <Sublink
+                        text="Settings"
+                        style={style}
+                        icon={<AiOutlineSetting />}
+                    />     
                 </div>
             </div>
         </div>

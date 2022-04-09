@@ -66,28 +66,64 @@ function Appointments({grid }) {
                         
                 <div className="App_appointment_bar">
                     <div className="App_appointment_bar-header">
-                                <h4>Root Canal Treatment</h4>
-                                <div className="header-right">
-                                    <FaAngleUp />
-                                    <p>Show previous Treatment</p>
-                                </div>        
+                        <h4>Root Canal Treatment</h4>
+                        <div className="header-right">
+                            <FaAngleUp />
+                            <p>Show previous Treatment</p>
+                        </div>        
                     </div>
                          <hr />  
                
+                    {/* UPPER UPCOMING APPOINTMENT BAR */}
                     <div className="App_appointment_bar-upper">
-                        <SubSmallBox  title={Date} result={Time} />
-                        <SubSmallBox title="Treatment" result={Treatment} /> 
-                        <SubSmallBox title = "Dentist" result = { Dentist} />
-                        <SubSmallBox title="Nurse" result={Nurse} /> 
-                        <SubLink style={style} text="Notes" icon={<CgNotes /> }/>
-                    </div>
+                        <SubSmallBox
+                            title={Date}
+                            result={Time}
+                        />
+                        <SubSmallBox
+                            title="Treatment"
+                            result={Treatment}
+                        /> 
+                        <SubSmallBox
+                            title="Dentist"
+                            result={Dentist}
+                        />
+                        <SubSmallBox
+                            title="Nurse"
+                            result={Nurse}
+                         /> 
+                        <SubLink
+                            style={style}
+                            text="Notes"
+                            icon={<CgNotes />}
+                        />
+                         </div>
+                    {/* LOWER UPCOMING APPOINTMENT BAR */}
                     <div className="App_appointment_bar-lower">
-                        <SubSmallBox title={Date} result={Time} />
-                        <SubSmallBox title="Treatment" result={Treatment}/>
-                        <SubSmallBox title="Dentist" result={Dentist} />
-                        <SubSmallBox title="Nurse" result={Nurse} /> 
-                        <div>
-                            <SubLink style={style} text="Notes" icon={<CgNotes />} />    
+                            <SubSmallBox
+                                title={Date}
+                                result={Time}
+                            />
+                            <SubSmallBox
+                                title="Treatment"
+                                result={Treatment}
+                            />
+                            <SubSmallBox
+                                title="Dentist"
+                                result={Dentist}
+                            />
+                            <SubSmallBox
+                                title="Nurse"
+                                result={Nurse}
+                            /> 
+                             <div>
+                                 
+                        {/* SMALL NOTES TEXT WITH ICON */}
+                            <SubLink
+                                style={style}
+                                text="Notes"
+                                icon={<CgNotes />}
+                            />    
                         </div>  
                     </div>
             </div>
