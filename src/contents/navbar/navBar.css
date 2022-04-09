@@ -1,0 +1,46 @@
+.App_Navbar {
+    padding: 0  ;
+    background: var(--whiteColor);
+}
+
+.nav_link {
+    padding-left: 1em;
+}
+
+
+.App_navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+
+.App_Navbar-links .nav_link:hover {
+    color: var(--whiteColor);
+    cursor: pointer;
+    background: var(--blue);
+    width: 100%;
+}
+
+.App_Navbar-links .nav_link:nth-child(4) {
+     color: var(--whiteColor);
+    cursor: pointer;
+    background: var(--blue);
+}
+
+
+@media(max-width: 2000px) {
+   .App_Navbar-links {
+       padding: 2em 0;
+       width: 100%;
+   }
+}
+
+@media(max-width: 1150px) {
+    
+}
+
+@media(max-width: 650px) {
+   
+}

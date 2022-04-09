@@ -1,0 +1,14 @@
+.sub_info_box {
+    padding: 2em 0;
+    border-bottom: 2px solid var(--greyColor)
+}
+
+.sub_info_box h3 {
+    color: var(--greyColor);
+    font-size: .5em;
+}
+.sub_info_box p {
+    color: var(--grayShadeColor);
+    padding-top: 8px;
+    font-size: 10px;
+}

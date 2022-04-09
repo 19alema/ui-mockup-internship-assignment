@@ -1,0 +1,29 @@
+.App_doctor-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 1em;
+}
+
+.App_doctor-help {
+    padding: 2em 1em;
+}
+.App_doctor {
+    padding: 1em 0;
+}
+.App_doctor-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%
+}
+
+.App_doctor-profile h4 {
+    font-size: 10px;
+    color: var(--blackColor);
+    font-weight: 400;
+}
+.App_doctor-profile p {
+    font-size: 10px;
+    color: var(--greyColor);
+    padding: 1em 0;
+}

@@ -1,0 +1,14 @@
+.App_single_file {
+    display: flex;
+    justify-content: center;
+}
+
+.col-left {
+    margin-left: 10px;
+}
+.col-left h4 {
+    font-size: 25px;
+}
+.col-left p {
+    font-size: 11px;
+}

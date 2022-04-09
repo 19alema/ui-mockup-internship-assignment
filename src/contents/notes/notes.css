@@ -1,0 +1,52 @@
+.App_notes {
+    padding: 1em 20px;
+    background-color: var(--whiteColor);
+    border-radius: var(--radius);
+}
+
+.notes {
+    background-color: var(--grayShade-color);
+    padding: 2em;
+
+}
+
+.notes ul li {
+    padding: .5em 0;
+    font-size: 12px;
+    color: var(--blackColor)
+}
+
+.notes_btn {
+    padding: .8em 2em;
+    color: var(--whiteColor);
+    background: var(--blue);
+    border: 2px solid var(--blue);
+    margin-top: 5em;
+    border-radius: var(--radius);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+}
+.notes_btn:hover {
+    background: inherit;
+    color: var(--blue)
+}
+
+.notes div {
+    text-align: right;
+}
+.App_notes-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+.notes_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+.notes_footer p {
+    font-size: 10px;
+}

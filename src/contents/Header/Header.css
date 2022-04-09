@@ -1,0 +1,99 @@
+.flex {
+    justify-content: space-between
+}
+.display_flex, .flex {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.display_flex {
+    justify-content: center;
+}
+@media(max-width: 650px) {
+    .flex {
+        flex-direction: column;
+    }
+}
+
+hr {
+    border: 0;
+    border-bottom: 2px solid var(--greyColor);
+}
+.patient_name {
+    color: var(--blackColor)
+}
+
+.App_header-upper ,
+.App_header-lower {
+    padding: 1em 10px;
+}
+.App_header-plus {
+    height: 45px;
+    width: 45px;
+    background: var(--blue);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    margin: 0 1em;
+}
+.App_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: inherit;
+    padding: .4em 10px;
+    border-radius: 25px;
+    border: 2px solid var(--greyColor)
+
+}
+
+.App_search input {
+    border: 0;
+    outline: 0;
+    background: inherit;
+    padding-left: 5px;
+}
+
+.App_header-notification {
+    width: 40px;
+    height: 40px;
+    background-color: var(--whiteColor);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    cursor: pointer;
+}
+
+.App_header-notification div {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    bottom: 100%;
+    background: red;
+    top: -35px;
+    right: -10px;
+    border-radius: 50%
+}
+.App_header-lower_print,
+.App_header-lower_edit {
+    background: var(--whiteColor);
+    padding: .5em 10px;
+    border-radius: var(--radius);
+}
+.App_header-lower_edit,
+.App_header-lower_edit p {
+    margin-left: 8px;
+}
+
+.App_header-lower_left > p:first-child {
+    color: var(--blue);
+}
+.App_header-lower_left > p:last-child {
+    color: var(--greyColor);
+}

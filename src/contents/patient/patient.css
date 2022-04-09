@@ -1,0 +1,96 @@
+.App_patient-info,
+.profile {
+    background: var(--whiteColor);
+    padding: 1em;
+    height: 100%;
+    border-radius: var(--radius);
+}
+
+.App_patient {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 5px;
+}
+
+@media(max-width: 650px) {
+    .App_patient {
+        grid-template-columns: 1fr;
+    }
+}
+
+.App_patient-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-box {
+    display: flex;
+}
+.box p {
+    font-size: 10px;
+}
+
+.box {
+    text-align: center;
+}
+
+.hr_line {
+    padding: 0 ;
+    height: 40px;
+    width: 2px;
+    margin: 0 1em;
+    background: var(--blackColor);
+}
+
+.App_patient h2 {
+    font-size: 20px;
+}
+.profile-image {
+    padding: 1em 0;
+}
+.box span {
+    font-size: 8px;
+}
+.profile button {
+    font-size: 10px;
+    width: 100%;
+    padding: .5rem;
+    background: inherit;
+    border: 2px solid var(--greyColor);
+    color: var(--blackColor);
+    border-radius: var(--radius);
+    text-transform: capitalize;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.profile button:hover {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    color: var(--whiteColor)
+}
+
+@media (max-wdith: 650px) {
+    .info-box {
+       padding: 1em 0;
+    }
+    .profile button {
+        width: initial;
+    }
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+

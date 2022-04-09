@@ -1,0 +1,26 @@
+.App_files {
+    background: var(--whiteColor);
+    padding: 2em 1em;
+    border-radius: var(--radius);
+    font-size: 15px;
+    color: var(--blackColor)
+}
+
+.single_file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--blackColor);
+    padding: 1.5em 0;
+}
+
+.App_file-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.App_files-content {
+    padding-top: 2em;
+}

@@ -1,0 +1,7 @@
+.App_links {
+    display: flex;
+    color: var(---blue)
+}
+.App_links P {
+    margin-left: 8px;
+}

@@ -1,0 +1,100 @@
+.App_appointment_bar-upper,
+.App_appointment_bar-lower {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 20px;
+    background: var(--whiteColor);
+    border-radius: var(--radius);
+    margin: 18px 0;
+}
+
+.App_appointment_bar-upper h4,
+.App_appointment_bar-lower h4 {
+    font-size: 8px;
+    color: var(--greyColor);
+}
+.App_appointment_bar-upper p,
+.App_appointment_bar-lower p {
+    font-size: 13px;
+    padding-top: 8px;
+    font-weight: 600;
+}
+
+
+
+.App_appointment {
+    padding: 1em 2em;
+    background-color: var(--whiteColor);
+    border-radius: var(--radius);
+}
+
+
+.App_appointment_bar {
+    background: var(--grayShade-color);
+    border-radius: var(--radius);
+    margin: 10px 0;
+    padding: 1em;
+}
+
+.appointment_tab {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--greyColor);
+    padding:0 1em;
+    max-width: 600px;
+    border-radius: var(--radius);
+}
+.appointment_tab p {
+    color: var(--blackColor);
+    padding: .8em 10px;
+    border-radius: var(--radius);
+    margin: 5px 0;
+}
+.App_appointment_bar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--blackColor)
+}
+
+.App_appointment_bar hr {
+    padding: 1em 0;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    background: var(--whiteColor);
+    padding: .8em 20px; 
+    border-radius: var(--radius);
+    cursor: pointer;
+    color: #808080;
+  
+}
+.header-right p {
+    font-size: .8em;
+    margin-left: 8px;
+}
+
+.tab_para {
+    font-size: 12px;
+    
+}
+
+.tab:nth-child(2) {
+    margin: 0 5px;
+}
+.tab:first-child  p{
+    color: var(--blue);
+    background-color: var(--whiteColor);
+}
+
+
+.appointment_tab p:hover {
+    color: var(--blue);
+    background-color: var(--whiteColor);
+    cursor: pointer;
+}
