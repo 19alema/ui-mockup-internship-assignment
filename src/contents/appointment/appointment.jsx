@@ -19,9 +19,7 @@ function Appointments({grid }) {
         fontSize: "15px"
     }
 
-    const styles = {
-
-    }
+   
     const getAppointment = async () => {
         fetch(APPOINTMENT_API).then(res => res.json()
             .then(data => {
@@ -77,14 +75,14 @@ function Appointments({grid }) {
                          <hr />  
                
                     <div className="App_appointment_bar-upper">
-                        <SubSmallBox style={styles}  title={Date} result={Time} />
+                        <SubSmallBox  title={Date} result={Time} />
                         <SubSmallBox title="Treatment" result={Treatment} /> 
                         <SubSmallBox title = "Dentist" result = { Dentist} />
                         <SubSmallBox title="Nurse" result={Nurse} /> 
                         <SubLink style={style} text="Notes" icon={<CgNotes /> }/>
                     </div>
                     <div className="App_appointment_bar-lower">
-                        <SubSmallBox style={styles} title={Date} result={Time} />
+                        <SubSmallBox title={Date} result={Time} />
                         <SubSmallBox title="Treatment" result={Treatment}/>
                         <SubSmallBox title="Dentist" result={Dentist} />
                         <SubSmallBox title="Nurse" result={Nurse} /> 
