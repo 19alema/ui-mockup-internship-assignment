@@ -9,22 +9,6 @@ import './App.css';
 
 function App() {
 
-  const notes = {
-    gridColoumn: "2",
-    gridRow: '1'
-  }
-  const patient = {
-    gridColoum: "1",
-    gridRow: '1'
-  }
-  const appointment = {
-    gridColoum: '1',
-    gridRow: '2'
-  }
-  const file = {
-    gridColoum: '2',
-    gridRow: '2'
-  }
   return (
     <div className="App">
         <div className="App_container">
@@ -36,11 +20,11 @@ function App() {
           <Header />
           <div className="App_info-content">
 
-            <Patient styles={patient} />
-            <Notes styles = {notes}/>
+            <Patient />
+            <Notes />
             
-            <Appointments styles ={appointment}/>
-            <Files styles = {file}/>
+            <Appointments/>
+            <Files />
           </div>
           </div>
          </div>

@@ -12,7 +12,7 @@ import {
 } from 'react-icons/bs'
 
 
-function Files({ grid }) {
+function Files() {
     // STATE TO HOLD FILES AFTER SUCCESS REQUEST
     const [file, setFile] = useState([]);
     const FILE_API = `https://619f39821ac52a0017ba467e.mockapi.io/Files`;

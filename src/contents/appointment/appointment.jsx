@@ -6,10 +6,13 @@ import {
 } from 'react-icons/cg';
 import {FaAngleUp} from 'react-icons/fa';
 import "./appointment.css"
-import { buildQueries } from '@testing-library/react';
-function Appointments({grid }) {
+
+function Appointments() {
+
+    // state for manuplating api after request
     const [appointment, setAppointment] = useState([])
    
+    // appointment api link
     const APPOINTMENT_API = `https://619f39821ac52a0017ba467e.mockapi.io/appointment_details`;
     const style = {
         color: "blue",
@@ -29,7 +32,7 @@ function Appointments({grid }) {
 
     useEffect(() => {
         getAppointment()
-    },[])
+    }, [APPOINTMENT_API])
     return ( 
         <div className="App_appointment">
              <div className="App_appointment-container">

@@ -2,7 +2,7 @@ import React, { useEffect, useState} from 'react'
 import "./patient.css"
 
 import SubInfo from '../../components/subLinks/subInfo/subInfo'
-function Patient({styles}) {
+function Patient() {
     const [patient, setPatient] = useState([])
     const [loading, setLoading] = useState(true)
     const style = {
